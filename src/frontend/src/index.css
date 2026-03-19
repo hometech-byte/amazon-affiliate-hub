@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Page bg: #F3F5F7 ~ oklch(0.965 0.006 240) */
+    --background: 0.965 0.006 240;
+    /* Surface/cards: #FFFFFF */
+    --foreground: 0.13 0.02 255;
+    --card: 1 0 0;
+    --card-foreground: 0.13 0.02 255;
+    --popover: 1 0 0;
+    --popover-foreground: 0.13 0.02 255;
+
+    /* Primary accent: deep blue #0B4F8A ~ oklch(0.37 0.13 248) */
+    --primary: 0.37 0.13 248;
+    --primary-foreground: 0.985 0 0;
+
+    --secondary: 0.94 0.006 240;
+    --secondary-foreground: 0.13 0.02 255;
+
+    --muted: 0.94 0.006 240;
+    --muted-foreground: 0.52 0.02 240;
+
+    --accent: 0.94 0.006 240;
+    --accent-foreground: 0.13 0.02 255;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.9 0.006 240;
+    --input: 0.9 0.006 240;
+    --ring: 0.37 0.13 248;
+
+    /* Hero bg: #2F4A56 ~ oklch(0.35 0.055 220) */
+    --hero-bg: 0.35 0.055 220;
+
+    /* Hero CTA: #1F8A7A ~ oklch(0.58 0.1 172) */
+    --hero-cta: 0.58 0.1 172;
+    --hero-cta-foreground: 0.985 0 0;
+
+    /* Footer: #0B2233 ~ oklch(0.22 0.04 230) */
+    --footer-bg: 0.22 0.04 230;
+
+    /* Orange badge: #E35A2C ~ oklch(0.62 0.18 40) */
+    --badge-hot: 0.62 0.18 40;
+
+    /* Blue badge: #1E73BE ~ oklch(0.52 0.13 248) */
+    --badge-prime: 0.52 0.13 248;
+
+    /* Gold star */
+    --star: 0.78 0.17 85;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.37 0.13 248;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
